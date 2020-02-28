@@ -1,0 +1,33 @@
+Name	Description	Treatment_Name	Data_Type	File1	File2
+Control_1	Control_1	Control	PE	Control_1_R1.fastq.gz	Control_1_R2.fastq.gz
+Control_2	Control_2	Control	PE	Control_2_R1.fastq.gz	Control_2_R2.fastq.gz
+Drug.A_1	Drug.A_1	Drug.A	PE	Drug.A_1_R1.fastq.gz	Drug.A_1_R2.fastq.gz
+Drug.A_2	Drug.A_2	Drug.A	PE	Drug.A_2_R1.fastq.gz	Drug.A_2_R2.fastq.gz
+Drug.B_1	Drug.B_1	Drug.B	PE	Drug.B_1_R1.fastq.gz	Drug.B_1_R2.fastq.gz
+Drug.B_2	Drug.B_2	Drug.B	PE	Drug.B_2_R1.fastq.gz	Drug.B_2_R2.fastq.gz
+Drug.C_1	Drug.C_1	Drug.C	PE	Drug.C_1_R1.fastq.gz	Drug.C_1_R2.fastq.gz
+Drug.C_2	Drug.C_2	Drug.C	PE	Drug.C_2_R1.fastq.gz	Drug.C_2_R2.fastq.gz
+
+
+
+Name	Description	Treatment_Name	Data_Type	File1	File2
+Control_1	Control_1	Control	bam	Control_1.sorted.bam
+Control_2	Control_2	Control	bam	Control_2.sorted.bam
+Drug.A_1	Drug.A_1	Drug.A	bam	Drug.A_1.sorted.bam
+Drug.A_2	Drug.A_2	Drug.A	bam	Drug.A_2.sorted.bam
+Drug.B_1	Drug.B_1	Drug.B	bam	Drug.B_1.sorted.bam
+Drug.B_2	Drug.B_2	Drug.B	bam	Drug.B_2.sorted.bam
+Drug.C_1	Drug.C_1	Drug.C	bam	Drug.C_1.sorted.bam
+Drug.C_2	Drug.C_2	Drug.C	bam	Drug.C_2.sorted.bam
+
+
+
+Name	Description	Treatment_Name	Data_Type	File1	File2
+Control_1	Control_1	Control	gene_counts	gene_counts.txt
+Control_2	Control_2	Control	gene_counts	gene_counts.txt
+Drug.A_1	Drug.A_1	Drug.A	gene_counts	gene_counts.txt
+Drug.A_2	Drug.A_2	Drug.A	gene_counts	gene_counts.txt
+Drug.B_1	Drug.B_1	Drug.B	gene_counts	gene_counts.txt
+Drug.B_2	Drug.B_2	Drug.B	gene_counts	gene_counts.txt
+Drug.C_1	Drug.C_1	Drug.C	gene_counts	gene_counts.txt
+Drug.C_2	Drug.C_2	Drug.C	gene_counts	gene_counts.txt	

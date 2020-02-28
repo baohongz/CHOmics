@@ -1,0 +1,3 @@
+Name,Platform,ProjectName,Case_SampleIDs,Control_SampleIDs,ComparisonCategory,ComparisonContrast,Case_DiseaseState,Case_Tissue,Case_SamplePathology,Case_SampleSource,Case_Ethnicity,Case_Gender
+RNA_M12e2.vs.RNA_M12WT,NGS_Human,CDK8 RNAi Project,RNA_M12e2_1;RNA_M12e2_2;RNA_M12e2_3,RNA_M12WT_1;RNA_M12WT_2;RNA_M12WT_3,Control vs Mutant,Control vs Mutant=>RNA_M12e2.vs.RNA_M12WT,RNA_M12e2,HCT 116,Kinase inhibition,cell culture,Asian,M
+RNA_CDK8i.vs.RNA_Veh,NGS_Human,CDK8 RNAi Project,RNA_CDK8i_1;RNA_CDK8i_2;RNA_CDK8i_3,RNA_Veh_1;RNA_Veh_2;RNA_Veh_3,Treated vs Control,Treated vs Control=>RNA_CDK8i.vs.RNA_Veh,RNA_CDK8i,HCT 116,Kinase inhibition,cell culture,Asian,F

@@ -1,0 +1,13 @@
+ignore,Name,Project_Name,SampleSource,ignore1,Treatment,DiseaseState,ignore2,
+ignore,Sample1,Test_Import_Project1,Control,,vehicle control,normal control,,
+ignore,Sample2,Test_Import_Project1,Control,,vehicle control,normal control,,
+ignore,Sample3,Test_Import_Project1,Control,,vehicle control,normal control,,
+ignore,Sample4,Test_Import_Project1,Treatment1,ignore,Myocardial_Infarction,,ignore2,ignore
+ignore,Sample5,Test_Import_Project1,Treatment1,,Myocardial_Infarction,,,
+ignore,Sample6,Test_Import_Project1,Treatment1,,Myocardial_Infarction,,,
+ignore,Sample7,Test_Import_Project2,Control,,autologous serum,,,
+ignore,Sample8,Test_Import_Project2,Control,,autologous serum,,,
+ignore,Sample9,Test_Import_Project2,Control,,autologous serum,,,
+ignore,Sample10,Test_Import_Project2,Treatment2,,CBNP,,,
+ignore,Sample11,Test_Import_Project2,Treatment2,,CBNP,,,
+ignore,Sample12,Test_Import_Project2,Treatment2,,CBNP,,,

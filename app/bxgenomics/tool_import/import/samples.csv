@@ -1,0 +1,13 @@
+Name,ProjectName,Platform,Description,Tissue,DiseaseState,SampleSource,Gender
+RNA_CDK8i_1,CDK8 RNAi Project,NGS_Human,NA,HCT 116,Prostate Cancer,Mutant,M
+RNA_CDK8i_2,CDK8 RNAi Project,NGS_Human,NA,HCT 116,Prostate Cancer,Mutant,F
+RNA_CDK8i_3,CDK8 RNAi Project,NGS_Human,NA,HCT 116,Prostate Cancer,Mutant,M
+RNA_M12e2_1,CDK8 RNAi Project,NGS_Human,NA,HCT 116,Prostate Cancer,Mutant,F
+RNA_M12e2_2,CDK8 RNAi Project,NGS_Human,NA,HCT 116,Prostate Cancer,Mutant,M
+RNA_M12e2_3,CDK8 RNAi Project,NGS_Human,NA,HCT 116,Prostate Cancer,Mutant,F
+RNA_M12WT_1,CDK8 RNAi Project,NGS_Human,NA,HCT 116,Prostate Cancer,WT,M
+RNA_M12WT_2,CDK8 RNAi Project,NGS_Human,NA,HCT 116,Prostate Cancer,WT,F
+RNA_M12WT_3,CDK8 RNAi Project,NGS_Human,NA,HCT 116,Prostate Cancer,WT,M
+RNA_Veh_1,CDK8 RNAi Project,NGS_Human,NA,HCT 116,Prostate Cancer,WT,F
+RNA_Veh_2,CDK8 RNAi Project,NGS_Human,NA,HCT 116,Prostate Cancer,WT,M
+RNA_Veh_3,CDK8 RNAi Project,NGS_Human,NA,HCT 116,Prostate Cancer,WT,F

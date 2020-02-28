@@ -1,0 +1,13 @@
+Comparison	Compared conditions	Comparison Category	Cell
+Promo_OM_24h_vs_0h	Promocell_24__OM vs Promocell_0_-OM	Treat Time1 vs Naïve	Promocell
+Promo_OM_48h_vs_0h	Promocell_48__OM vs Promocell_0_-OM	Treat Time2 vs Naïve	Promocell
+Promo_OM_72h_vs_0h	Promocell_72__OM vs Promocell_0_-OM	Treat Time3 vs Naïve	Promocell
+Promo_OM_vs_NM_24h	Promocell_24__OM vs Promocell_24_-OM	Treat vs control Time1	Promocell
+Promo_OM_vs_NM_48h	Promocell_48__OM vs Promocell_48_-OM	Treat vs control Time2	Promocell
+Promo_OM_vs_NM_72h	Promocell_72__OM vs Promocell_72_-OM	Treat vs control Time2	Promocell
+USSC_OM_24h_vs_0h	USSC_24__OM vs USSC_0_-OM	Treat Time1 vs Naïve	USSC
+USSC_OM_48h_vs_0h	USSC_48__OM vs USSC_0_-OM	Treat Time2 vs Naïve	USSC
+USSC_OM_72h_vs_0h	USSC_72__OM vs USSC_0_-OM	Treat Time3 vs Naïve	USSC
+USSC_OM_vs_NM_24h	USSC_24__OM vs USSC_24_-OM	Treat vs control Time1	USSC
+USSC_OM_vs_NM_48h	USSC_48__OM vs USSC_48_-OM	Treat vs control Time2	USSC
+USSC_OM_vs_NM_72h	USSC_72__OM vs USSC_72_-OM	Treat vs control Time2	USSC

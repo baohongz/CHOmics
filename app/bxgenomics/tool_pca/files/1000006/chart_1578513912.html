@@ -1,0 +1,234 @@
+
+  <!DOCTYPE html>
+
+    <html xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>  
+	<script                 src='../../../library/jquery/1.11.3/jquery.min.js'></script>
+  	<link rel='stylesheet' href='../../../library/shiny/shiny-1.2.0/shiny.css'>
+	<script                 src='../../../library/shiny/shiny-1.2.0/shiny.js'></script>
+	
+	<script type='text/javascript'>
+		window.Shiny.outputBindings = null;
+	</script>
+	
+  	<script                 src='../../../library/htmlwidgets/htmlwidgets-1.3/htmlwidgets.js'></script>
+	
+	<link rel='stylesheet' href='../../../library/selectize/selectize-0.12.1/css/selectize.bootstrap3.css'/>
+	<script                 src='../../../library/selectize/selectize-0.12.1/js/selectize.min.js'></script>
+	
+	<link rel='stylesheet' href='../../../library/ionrangeslider/ionrangeslider-2.0.3/css/ion.rangeSlider.css'/>
+	<link rel='stylesheet' href='../../../library/ionrangeslider/ionrangeslider-2.0.3/css/ion.rangeSlider.skinShiny.css'/>
+	<script                 src='../../../library/ionrangeslider/ionrangeslider-2.0.3/js/ion.rangeSlider.min.js'></script>
+	
+	<script                 src='../../../library/strftime/strftime-min.js'></script>
+	
+	<script                 src='../../../library/d3/d3-5.6.2.min.js'></script>
+	<script                 src='../../../library/d3-legend/d3-legend.min.js'></script>
+	<script                 src='../../../library/d3-labeler/d3-labeler.js'></script>
+	
+	<link rel='stylesheet' href='../../../library/d3.lasso/d3.lasso-1.0.0/lasso.css'/>
+	<script                 src='../../../library/d3.lasso/d3.lasso-1.0.0/lasso.js'></script>
+	
+	<link rel='stylesheet' href='../../../library/scatterD3/scatterD3-0.8.2/scatterD3.css'/>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-utils.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-scales.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-dims_dc.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-menu.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-axes.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-dots.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-arrows.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-labels.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-lines.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-ellipses.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-zoom.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-legend.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-lasso.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-exports.js'></script>
+	
+	<script                 src='../../../library/scatterD3-binding/scatterD3-binding-0.9/scatterD3.js'></script>
+	
+	<link rel='stylesheet' href='../../../library/bootstrap/bootstrap-3.3.7/css/bootstrap.min.css'/>
+	<script                 src='../../../library/bootstrap/bootstrap-3.3.7/js/bootstrap.min.js'></script>
+	
+	<style>
+		#htmlwidget-1 {
+			height: 90vh !important;
+		}
+	</style>
+</head>
+  <body>
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-lg-12">
+		<div id="htmlwidget-1" style="width:100%;height:auto" class="scatterD3"></div>
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript">
+
+	var instance;
+	var inputData;
+
+		
+	HTMLWidgets.addPostRenderHandler(function() {
+		var widgets = HTMLWidgets.widgets;
+		var jed = widgets.filter(function(widget){
+			return widget.name === "scatterD3"
+		})[0];
+	
+	
+		var el = document.getElementById("htmlwidget-1");
+
+	    instance = window.HTMLWidgets.getInstance(el);
+
+		inputData =
+	{
+  "data": {
+              "x":          [9.81691347015913, 10.9858921908045, 12.4790326406954, 13.6646987209387, -15.5420667958359, -18.2295334752108, -17.9348868465969, -5.3571105394565, -5.41586699926726, -2.33253229393834, -1.14366042570262, 5.03436171346812, 2.19550564743336, 6.67285888304721, 5.10639410946183],
+
+              "y":          [-6.59382725849514, -1.20666512196758, -5.39335850418046, -0.930445397865427, -1.67053167712241, -4.05831695583665, -3.26657947785268, 0.455402248572319, 3.45072421059564, 4.35438736469162, 6.60965081002053, 2.55064273061913, 1.81658250734254, 1.06312495002075, 2.81920957145779],"size_var":   [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+
+              "col_var":    ["Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active"],
+
+              "lab":        ["DK1B1D108", "DK1B2D108", "DK1B3D108", "DK1B4D108", "DK1B1D72", "DK1B2D72", "DK1B3D72", "DK1B1D84", "DK1B2D84", "DK1B3D84", "DK1B4D84", "DK1B1D96", "DK1B2D96", "DK1B3D96", "DK1B4D96"],
+
+              "symbol_var": ["1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1"],
+
+              "key_var":    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+          },
+          "settings": {
+    "x_log": false,
+    "y_log": false,
+    "labels_size": 10,
+    "labels_positions": "auto",
+    "point_size": 64,
+    "point_opacity": 1,
+    "opacities": null,
+    "hover_size": 1,
+    "hover_opacity": null,
+                  "xlab": "PC1 (63.93%)",
+              "ylab": "PC2 (7.83%)",
+              "has_labels": true,
+    "col_lab": "",
+    "col_continuous": false,
+    "col_levels": null,
+    "colors": null,
+    "ellipses": false,
+    "ellipses_data": [],
+    "symbol_lab": "",
+    "symbol_levels": null,
+    "symbols": null,
+    "size_range": [10, 300],
+    "size_lab": "NULL",
+    "sizes": null,
+    "opacity_lab": "NULL",
+    "opacities.1": null,
+    "unit_circle": false,
+    "has_color_var": false,
+    "has_symbol_var": false,
+    "has_size_var": false,
+    "has_opacity_var": false,
+    "has_url_var": false,
+    "has_legend": true,
+    "has_tooltips": true,
+    "tooltip_text": null,
+    "tooltip_position_x": "right",
+    "tooltip_position_y": "bottom",
+    "has_custom_tooltips": false,
+    "click_callback": null,
+    "zoom_callback": null,
+    "zoom_on": null,
+    "zoom_on_level": 3,
+    "disable_wheel": false,
+    "fixed": false,
+    "legend_width": 150,
+    "left_margin": 100,
+    "html_id": "scatterD3-RALOWFSR",
+    "xlim": null,
+    "ylim": null,
+    "x_categorical": false,
+    "y_categorical": false,
+    "menu": true,
+    "lasso": true,
+    "lasso_callback": "function(sel) {alert(sel.data().map(function(d) {return d.lab}).join('n'));}",
+    "dom_id_reset_zoom": "scatterD3-reset-zoom",
+    "dom_id_svg_export": "scatterD3-svg-export",
+    "dom_id_lasso_toggle": "scatterD3-lasso-toggle",
+    "transitions": false,
+    "axes_font_size": "120%",
+    "legend_font_size": "100%",
+    "caption": {
+      "title": "",
+      "subtitle": "",
+      "text": ""
+    },
+    "lines": {
+      "slope": [
+        0,
+        null
+      ],
+      "intercept": [
+        0,
+        0
+      ],
+      "stroke": [
+        "#000",
+        "#000"
+      ],
+      "stroke_width": [
+        1,
+        1
+      ],
+      "stroke_dasharray": [
+        5,
+        5
+      ]
+    }
+  }
+};
+	
+
+
+		instance.renderValue(inputData);
+		
+	});
+
+
+$(document).ready(function() {
+	
+	function show_popup(){
+		//100: margin-bottom from the scatterD3-dims.js
+		var height = $("#htmlwidget-1").height() - 100;
+		
+		//250: margin-left from above
+		var width = $("#htmlwidget-1").width() - 250;
+		
+		$(".y-axis-label").attr("dy", "-50px");
+		$(".y-axis-label").attr("dx", "-" + height/2 + "px");
+		$(".y-axis-label").css("text-anchor", "middle");
+		$(".y-axis-label").css("font-size", "150%");
+		
+		$(".x-axis-label").attr("dy", "50px");
+		$(".x-axis-label").attr("dx", "-" + width/2 + "px");
+		$(".x-axis-label").css("text-anchor", "middle");
+		$(".x-axis-label").css("font-size", "150%");
+   	};
+   window.setTimeout( show_popup, 100 );
+   //1000 = 1 second
+   
+   
+	
+});
+	
+	
+		
+
+
+   
+
+</script>
+</body>
+</html>

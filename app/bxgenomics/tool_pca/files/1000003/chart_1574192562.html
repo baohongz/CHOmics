@@ -1,0 +1,234 @@
+
+  <!DOCTYPE html>
+
+    <html xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>  
+	<script                 src='../../../library/jquery/1.11.3/jquery.min.js'></script>
+  	<link rel='stylesheet' href='../../../library/shiny/shiny-1.2.0/shiny.css'>
+	<script                 src='../../../library/shiny/shiny-1.2.0/shiny.js'></script>
+	
+	<script type='text/javascript'>
+		window.Shiny.outputBindings = null;
+	</script>
+	
+  	<script                 src='../../../library/htmlwidgets/htmlwidgets-1.3/htmlwidgets.js'></script>
+	
+	<link rel='stylesheet' href='../../../library/selectize/selectize-0.12.1/css/selectize.bootstrap3.css'/>
+	<script                 src='../../../library/selectize/selectize-0.12.1/js/selectize.min.js'></script>
+	
+	<link rel='stylesheet' href='../../../library/ionrangeslider/ionrangeslider-2.0.3/css/ion.rangeSlider.css'/>
+	<link rel='stylesheet' href='../../../library/ionrangeslider/ionrangeslider-2.0.3/css/ion.rangeSlider.skinShiny.css'/>
+	<script                 src='../../../library/ionrangeslider/ionrangeslider-2.0.3/js/ion.rangeSlider.min.js'></script>
+	
+	<script                 src='../../../library/strftime/strftime-min.js'></script>
+	
+	<script                 src='../../../library/d3/d3-5.6.2.min.js'></script>
+	<script                 src='../../../library/d3-legend/d3-legend.min.js'></script>
+	<script                 src='../../../library/d3-labeler/d3-labeler.js'></script>
+	
+	<link rel='stylesheet' href='../../../library/d3.lasso/d3.lasso-1.0.0/lasso.css'/>
+	<script                 src='../../../library/d3.lasso/d3.lasso-1.0.0/lasso.js'></script>
+	
+	<link rel='stylesheet' href='../../../library/scatterD3/scatterD3-0.8.2/scatterD3.css'/>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-utils.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-scales.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-dims_dc.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-menu.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-axes.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-dots.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-arrows.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-labels.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-lines.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-ellipses.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-zoom.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-legend.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-lasso.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-exports.js'></script>
+	
+	<script                 src='../../../library/scatterD3-binding/scatterD3-binding-0.9/scatterD3.js'></script>
+	
+	<link rel='stylesheet' href='../../../library/bootstrap/bootstrap-3.3.7/css/bootstrap.min.css'/>
+	<script                 src='../../../library/bootstrap/bootstrap-3.3.7/js/bootstrap.min.js'></script>
+	
+	<style>
+		#htmlwidget-1 {
+			height: 90vh !important;
+		}
+	</style>
+</head>
+  <body>
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-lg-12">
+		<div id="htmlwidget-1" style="width:100%;height:auto" class="scatterD3"></div>
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript">
+
+	var instance;
+	var inputData;
+
+		
+	HTMLWidgets.addPostRenderHandler(function() {
+		var widgets = HTMLWidgets.widgets;
+		var jed = widgets.filter(function(widget){
+			return widget.name === "scatterD3"
+		})[0];
+	
+	
+		var el = document.getElementById("htmlwidget-1");
+
+	    instance = window.HTMLWidgets.getInstance(el);
+
+		inputData =
+	{
+  "data": {
+              "x":          [-1.76787072487314, -8.40490382098391, -6.90600700348994, -5.85921252677962, -5.31802996504183, -7.6024317713902, -6.94953517953059, -1.70352367869038, -5.96234598255026, -8.17336236870896, -5.41276718052765, -4.87227164935374, -6.73229952218087, -6.85995994528817, -1.72912583652596, -8.02504659057493, -7.78810340345223, -6.44077348384977, -5.34011126107008, -7.94556353151747, -8.03918829410664, -2.15103954225903, -7.97144166389954, -8.13176166436247, -7.81383730937908, -4.52632408284381, -7.50913137881514, -7.09557563549842, -2.39463041093832, -8.16680333076613, -6.79777725277495, -7.23615544151166, -5.68737566897933, -7.14207982027767, -5.97251515799576, -2.33448203273108, -9.77804509431154, -7.40275844121132, -7.5213598081763, -4.70308402035281, -7.39455054986148, -5.57091481591276, -1.91676653270286, -8.51768210111447, -8.3095062403792, -7.64945523756166, -5.57222940837656, -7.607845063222, -5.14961630227294, -1.69773064789708, -8.71898922222996, -7.64756373633549, -7.74065673419908, -5.2204631176913, -8.06894375795991, -7.22512194321926, -2.35806457091244, -8.43287579810245, -7.89024051307673, -8.87170351794195, -4.65226712549974, -8.47666741222823, -7.1989877821892, 6.16580589673648, 5.35044973005622, 9.34810036402579, 4.88920557651654, 4.07963330208515, 9.6318583582762, 6.90176005819137, 4.18261451077557, 3.88219277950999, 7.22831941933358, 6.07807014691829, 4.37968443972033, 9.05997385059917, 4.96099196186153, 7.46436793631572, 5.73573688969851, 4.83440066646435, 9.18872165005818, 4.01523299472627, 4.06026156030121, 6.58139559048604, 5.78649202299843, 4.60719772483799, 8.52815595454662, 4.30526966527635, 4.91347620869009, 6.07542969433938, 4.2381940996433, 4.43907863682858, 8.45991012484332, 4.01816582670496, 4.43187090969942, 5.90184973304208, 5.39784561087142, 4.85969992531047, 8.16929773210471, 4.83172573059695, 3.96654098411983, 7.56014864067982, 6.56482642130336, 5.25046014303935, 8.47794928441615, 4.53152186469679, 4.89162206647776, 7.84688943045134, 6.29176337607312, 5.54596967101675, 8.27152711960512, 4.79157214104035, 4.573565149412, 8.0917696515371, 6.51171031951832, 5.69437152453335, 3.94565434476343, 3.82095816839535, 7.4549928186873, 5.73548892774632, 5.26192060249673, 7.78429574538803, 3.92777291606661, 6.83764757561169, 5.5001021167027, 7.32912676260637, 4.40642710205499, 4.08881368122289, 6.76796344269014, 5.8325838841594, 5.51906044895452],
+
+              "y":          [8.94267080624025, -0.84608748584353, -2.07514128559064, -2.61099566073382, 3.43819353645973, 0.540528566224486, 1.70750071373357, 9.4378308239909, -1.44327344476867, -1.93467677073222, -2.61792902735529, 3.61436553403963, 0.287969073908775, 0.308944323695872, 8.18767689375409, -1.46147917976323, -1.49866336835055, -2.85954727221723, 3.65878709487889, 1.22254875849286, 0.65291233615478, 7.89700870409064, -0.902869255337405, -1.75904301601896, -2.032811319733, 4.53441318882004, 0.27773953759529, -0.404974605632268, 7.56993269047156, -0.717804549566421, -1.38126820075107, -1.61888430885467, 4.52496194291435, 0.477626594437417, -0.0773259746244434, 8.65659826492878, -1.60693586485048, -1.98077192320606, -2.0275590202178, 4.13792067227908, 0.940718805071863, -0.337568178419282, 8.58066556708129, -1.07810927073963, -2.12150906469598, -1.5095074438656, 4.72164194725194, 0.857767524347384, -0.192420588453168, 7.92122088796702, -1.441189974668, -1.87982231900914, -1.38904463067899, 3.471303995467, 0.0513385776386671, 0.335574149115424, 8.90057998669987, -0.756584498740129, -2.08734941041272, -1.2156565666268, 3.77647966420385, 0.335864686533389, -0.00844415970731721, 1.04166796121759, -1.65454192478204, 7.28971660528246, -2.11703246038999, -5.95104002243061, 8.21308683185589, 6.10421715021722, -3.73512059719277, -6.8697369472933, 6.40179317985367, 0.948736066490559, -2.49394235201741, 8.19002496772029, -3.19839071912291, 5.87413392405541, 0.959395047597699, -0.871257821100395, 6.13666805529782, -5.93043818876797, -7.95539312211109, 4.05002414554704, -0.315980097028792, -3.83634691052351, 5.74147749261173, -5.12124339166507, -7.73556823789738, 4.5764545705317, 0.390205165812642, -4.02022021495443, 5.59575664445263, -6.20651822329501, -7.78703959461875, 4.49649464867442, 0.553384181690005, -3.92341780311156, 4.89400051125155, -6.3816868844551, -9.15505943096049, 2.3759661159208, -0.441328587714318, -3.88297242771453, 5.02688086023045, -6.43057767155464, -9.01816284487633, 2.59027982706994, -0.74878376895982, -3.60326573370222, 5.18785499400995, -5.85873274374522, -8.76592805589434, 2.4018027831482, -0.978964368279901, -3.37955474138238, -6.17324131860523, -8.90309397754559, 2.29372939830919, -1.1446626357555, -4.44206699173349, 3.95408639765577, -6.59251230394365, 1.48072359112558, -1.2747754828269, 4.33632708220758, -6.49054186567312, -8.9521782375382, 2.24921006309713, -1.25990356685178, -3.84691420324331],"size_var":   [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+
+              "col_var":    ["Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active"],
+
+              "lab":        ["D1d0.C", "D1d10.C", "D1d12.C", "D1d14.L", "D1d3.C", "D1d6.C", "D1d8.C", "D2d0.C", "D2d10.C", "D2d12.C", "D2d14.L", "D2d3.C", "D2d6.C", "D2d8.C", "D4d0.C", "D4d10.C", "D4d12.C", "D4d14.L", "D4d3.C", "D4d6.C", "D4d8.C", "E11d0.L", "E11d10.L", "E11d12.L", "E11d14.C", "E11d3.L", "E11d6.L", "E11d8.L", "E12d0.L", "E12d10.L", "E12d12.L", "E12d14.C", "E12d3.L", "E12d6.L", "E12d8.L", "E13d0.H", "E13d10.H", "E13d12.H", "E13d14.H", "E13d3.H", "E13d6.H", "E13d8.H", "E14d0.H", "E14d10.H", "E14d12.H", "E14d14.H", "E14d3.H", "E14d6.H", "E14d8.H", "E16d0.H", "E16d10.H", "E16d12.H", "E16d14.H", "E16d3.H", "E16d6.H", "E16d8.H", "E9d0.L", "E9d10.L", "E9d12.L", "E9d14.C", "E9d3.L", "E9d6.L", "E9d8.L", "C11.D5.d6", "C11.D5.d8", "C11.D5.d0", "C11.D5.d10", "C11.D5.d14", "C11.D6.d0", "C11.D5.d3", "C11.D6.d10", "C11.D6.d14", "C11.D6.d3", "C11.D6.d6", "C11.D6.d8", "C11.E9.d0", "C11.E9.d10", "C11.E9.d3", "C11.E9.d6", "C11.E9.d8", "E13.D7.d0", "E13.D7.d10", "E13.D7.d14", "E13.D7.d3", "E13.D7.d6", "E13.D7.d8", "E13.D8.d0", "E13.D8.d10", "E13.D8.d14", "E13.D8.d3", "E13.D8.d6", "E13.D8.d8", "E13.E11.d0", "E13.E11.d10", "E13.E11.d14", "E13.E11.d3", "E13.E11.d6", "E13.E11.d8", "M7.E14.d0", "M7.E14.d10", "M7.E14.d14", "M7.E14.d3", "M7.E14.d6", "M7.E14.d8", "M7.E15.d0", "M7.E15.d10", "M7.E15.d14", "M7.E15.d3", "M7.E15.d6", "M7.E15.d8", "M7.E16.d0", "M7.E16.d10", "M7.E16.d14", "M7.E16.d3", "M7.E16.d6", "M7.E16.d8", "M7brg.E14.d10", "M7brg.E14.d14", "M7brg.E14.d3", "M7brg.E14.d6", "M7brg.E14.d8", "M7brg.E15.d0", "M7brg.E15.d10", "M7brg.E15.d3", "M7brg.E15.d6", "M7brg.E16.d0", "M7brg.E16.d10", "M7brg.E16.d14", "M7brg.E16.d3", "M7brg.E16.d6", "M7brg.E16.d8"],
+
+              "symbol_var": ["1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1"],
+
+              "key_var":    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131]
+          },
+          "settings": {
+    "x_log": false,
+    "y_log": false,
+    "labels_size": 10,
+    "labels_positions": "auto",
+    "point_size": 64,
+    "point_opacity": 1,
+    "opacities": null,
+    "hover_size": 1,
+    "hover_opacity": null,
+                  "xlab": "PC1 (40.86%)",
+              "ylab": "PC2 (20.30%)",
+              "has_labels": true,
+    "col_lab": "",
+    "col_continuous": false,
+    "col_levels": null,
+    "colors": null,
+    "ellipses": false,
+    "ellipses_data": [],
+    "symbol_lab": "",
+    "symbol_levels": null,
+    "symbols": null,
+    "size_range": [10, 300],
+    "size_lab": "NULL",
+    "sizes": null,
+    "opacity_lab": "NULL",
+    "opacities.1": null,
+    "unit_circle": false,
+    "has_color_var": false,
+    "has_symbol_var": false,
+    "has_size_var": false,
+    "has_opacity_var": false,
+    "has_url_var": false,
+    "has_legend": true,
+    "has_tooltips": true,
+    "tooltip_text": null,
+    "tooltip_position_x": "right",
+    "tooltip_position_y": "bottom",
+    "has_custom_tooltips": false,
+    "click_callback": null,
+    "zoom_callback": null,
+    "zoom_on": null,
+    "zoom_on_level": 3,
+    "disable_wheel": false,
+    "fixed": false,
+    "legend_width": 150,
+    "left_margin": 100,
+    "html_id": "scatterD3-RALOWFSR",
+    "xlim": null,
+    "ylim": null,
+    "x_categorical": false,
+    "y_categorical": false,
+    "menu": true,
+    "lasso": true,
+    "lasso_callback": "function(sel) {alert(sel.data().map(function(d) {return d.lab}).join('n'));}",
+    "dom_id_reset_zoom": "scatterD3-reset-zoom",
+    "dom_id_svg_export": "scatterD3-svg-export",
+    "dom_id_lasso_toggle": "scatterD3-lasso-toggle",
+    "transitions": false,
+    "axes_font_size": "120%",
+    "legend_font_size": "100%",
+    "caption": {
+      "title": "",
+      "subtitle": "",
+      "text": ""
+    },
+    "lines": {
+      "slope": [
+        0,
+        null
+      ],
+      "intercept": [
+        0,
+        0
+      ],
+      "stroke": [
+        "#000",
+        "#000"
+      ],
+      "stroke_width": [
+        1,
+        1
+      ],
+      "stroke_dasharray": [
+        5,
+        5
+      ]
+    }
+  }
+};
+	
+
+
+		instance.renderValue(inputData);
+		
+	});
+
+
+$(document).ready(function() {
+	
+	function show_popup(){
+		//100: margin-bottom from the scatterD3-dims.js
+		var height = $("#htmlwidget-1").height() - 100;
+		
+		//250: margin-left from above
+		var width = $("#htmlwidget-1").width() - 250;
+		
+		$(".y-axis-label").attr("dy", "-50px");
+		$(".y-axis-label").attr("dx", "-" + height/2 + "px");
+		$(".y-axis-label").css("text-anchor", "middle");
+		$(".y-axis-label").css("font-size", "150%");
+		
+		$(".x-axis-label").attr("dy", "50px");
+		$(".x-axis-label").attr("dx", "-" + width/2 + "px");
+		$(".x-axis-label").css("text-anchor", "middle");
+		$(".x-axis-label").css("font-size", "150%");
+   	};
+   window.setTimeout( show_popup, 100 );
+   //1000 = 1 second
+   
+   
+	
+});
+	
+	
+		
+
+
+   
+
+</script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+
+  <!DOCTYPE html>
+
+    <html xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>  
+	<script                 src='../../../library/jquery/1.11.3/jquery.min.js'></script>
+  	<link rel='stylesheet' href='../../../library/shiny/shiny-1.2.0/shiny.css'>
+	<script                 src='../../../library/shiny/shiny-1.2.0/shiny.js'></script>
+	
+	<script type='text/javascript'>
+		window.Shiny.outputBindings = null;
+	</script>
+	
+  	<script                 src='../../../library/htmlwidgets/htmlwidgets-1.3/htmlwidgets.js'></script>
+	
+	<link rel='stylesheet' href='../../../library/selectize/selectize-0.12.1/css/selectize.bootstrap3.css'/>
+	<script                 src='../../../library/selectize/selectize-0.12.1/js/selectize.min.js'></script>
+	
+	<link rel='stylesheet' href='../../../library/ionrangeslider/ionrangeslider-2.0.3/css/ion.rangeSlider.css'/>
+	<link rel='stylesheet' href='../../../library/ionrangeslider/ionrangeslider-2.0.3/css/ion.rangeSlider.skinShiny.css'/>
+	<script                 src='../../../library/ionrangeslider/ionrangeslider-2.0.3/js/ion.rangeSlider.min.js'></script>
+	
+	<script                 src='../../../library/strftime/strftime-min.js'></script>
+	
+	<script                 src='../../../library/d3/d3-5.6.2.min.js'></script>
+	<script                 src='../../../library/d3-legend/d3-legend.min.js'></script>
+	<script                 src='../../../library/d3-labeler/d3-labeler.js'></script>
+	
+	<link rel='stylesheet' href='../../../library/d3.lasso/d3.lasso-1.0.0/lasso.css'/>
+	<script                 src='../../../library/d3.lasso/d3.lasso-1.0.0/lasso.js'></script>
+	
+	<link rel='stylesheet' href='../../../library/scatterD3/scatterD3-0.8.2/scatterD3.css'/>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-utils.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-scales.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-dims_dc.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-menu.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-axes.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-dots.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-arrows.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-labels.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-lines.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-ellipses.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-zoom.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-legend.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-lasso.js'></script>
+	<script                 src='../../../library/scatterD3/scatterD3-0.8.2/scatterD3-exports.js'></script>
+	
+	<script                 src='../../../library/scatterD3-binding/scatterD3-binding-0.9/scatterD3.js'></script>
+	
+	<link rel='stylesheet' href='../../../library/bootstrap/bootstrap-3.3.7/css/bootstrap.min.css'/>
+	<script                 src='../../../library/bootstrap/bootstrap-3.3.7/js/bootstrap.min.js'></script>
+	
+	<style>
+		#htmlwidget-1 {
+			height: 90vh !important;
+		}
+	</style>
+</head>
+  <body>
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-lg-12">
+		<div id="htmlwidget-1" style="width:100%;height:auto" class="scatterD3"></div>
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript">
+
+	var instance;
+	var inputData;
+
+		
+	HTMLWidgets.addPostRenderHandler(function() {
+		var widgets = HTMLWidgets.widgets;
+		var jed = widgets.filter(function(widget){
+			return widget.name === "scatterD3"
+		})[0];
+	
+	
+		var el = document.getElementById("htmlwidget-1");
+
+	    instance = window.HTMLWidgets.getInstance(el);
+
+		inputData =
+	{
+  "data": {
+              "x":          [-34.1845987130626, -46.5623806948863, 50.5358419662744, 54.9988539968961, 10.4292795578975, -6.97269843908952, -11.7865365304127, -35.5457997152294, -48.819525143663, 57.1404423928636, 38.3093721889393, 9.28840021993484, 0.707817959278757, 39.2241340616369, 8.66615186092004, -0.0310866283334218, -13.1316556693985, -28.5811416404591, -54.2195758391248, 49.5107447635423, 34.8568726226919, 9.70661581632755, -35.8257672163509, -39.5024094052209, 6.5093743330678, -15.0968108923943, -23.8190271816846, -47.3849317722306, -56.992726427524, 47.1877877761118, 51.129685268207, 48.0250496646655, -58.6167443510665, -34.2330464966102, -27.2144031735403, 5.63970925732887, -3.07843010964125, 50.4361004873297, -42.308852972807, -37.4198758834528, -24.310246090714, -17.6476371069198, 13.1529518488275, 55.0671793340369, -21.4000345185808, -8.63424813165355, 5.35631384024458, 35.1950985654341, 50.6939195932056, -36.7043328019823, -20.9994029324719, -25.9391226319183, -11.085450350357, 12.1752486696883, 52.7613361785583, 59.1431861557571, -38.7897081729941, -36.2321705364564, -24.1287246120393, -7.1879581165818, 4.87342959233524, 54.2565510074994, 59.4096119193511],
+
+              "y":          [-33.3423483623505, -35.7745819135661, 7.16280759894975, -43.3164914858317, 14.3705580771001, 17.452520133505, -13.8819244972516, -26.1755675474553, -39.3351196661171, 0.851041920601942, 9.03317233327465, 8.10492693500781, -7.45571528644606, 7.58037039571616, 11.9203714648199, 2.28778351944007, -12.1010544711229, -28.5572555748217, -62.8461399918305, 3.23449362086801, 16.2988829229489, 9.15384669303922, -7.00801490115055, -19.2680820704762, 20.6608784571737, 27.9745878195577, 22.1190708631117, 24.858503308286, 18.8278385588178, -2.6017883483244, -38.774718451968, 7.19991294206888, 16.2205542259407, 3.70319082752169, 20.153869767872, 20.6573680818874, 7.96345329266928, 7.60978232342689, 6.57767240890442, 14.7409279403094, 22.0481572148296, -9.64109703438053, -39.2350405529872, -1.59349784439623, -1.86040723388599, 8.45334814903186, 13.5508360708073, 13.9040820318003, 2.15599748573608, -6.85398146809339, -10.6069186877834, 20.9020403684996, 17.4736665631057, 7.92726410415361, -15.6733999396639, -0.343358768457704, -5.34865939515458, 13.0835756856773, 18.2069539991507, 14.3023690202292, 18.7190308005541, -17.7929511948608, -18.0575932380182],"size_var":   [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+
+              "col_var":    ["Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active", "Active"],
+
+              "lab":        ["Low_Cys_Day12_E12", "Low_Cys_Day14_E12", "High_Cys_Day0_E13", "High_Cys_Day3_E13", "High_Cys_Day6_E13", "High_Cys_Day8_E13", "Low_Cys_Day10_E11", "Low_Cys_Day12_E11", "Low_Cys_Day14_E11", "Low_Cys_Day0_E12", "Low_Cys_Day3_E12", "Low_Cys_Day6_E12", "Low_Cys_Day8_E12", "Low_Cys_Day3_E9", "Low_Cys_Day6_E9", "Low_Cys_Day8_E9", "Low_Cys_Day10_E9", "Low_Cys_Day12_E9", "Low_Cys_Day14_E9", "Low_Cys_Day0_E11", "Low_Cys_Day3_E11", "Low_Cys_Day6_E11", "Control_Day12_D4", "Control_Day14_D4", "High_Cys_Day6_E16", "High_Cys_Day8_E16", "High_Cys_Day10_E16", "High_Cys_Day12_E16", "High_Cys_Day14_E16", "High_Cys_Day3_E14", "High_Cys_Day3_E16", "High_Cys_Day0_E16", "High_Cys_Day14_E14", "High_Cys_Day12_E14", "High_Cys_Day10_E14", "High_Cys_Day6_E14", "High_Cys_Day8_E14", "High_Cys_Day0_E14", "High_Cys_Day14_E13", "High_Cys_Day12_E13", "High_Cys_Day10_E13", "Low_Cys_Day10_E12", "Low_Cys_Day8_E11", "Low_Cys_Day0_E9", "Control_Day10_D4", "Control_Day8_D4", "Control_Day6_D4", "Control_Day3_D4", "Control_Day0_D4", "Control_Day14_D2", "Control_Day12_D2", "Control_Day10_D2", "Control_Day8_D2", "Control_Day6_D2", "Control_Day3_D2", "Control_Day0_D2", "Control_Day14_D1", "Control_Day12_D1", "Control_Day10_D1", "Control_Day8_D1", "Control_Day6_D1", "Control_Day3_D1", "Control_Day0_D1"],
+
+              "symbol_var": ["1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1"],
+
+              "key_var":    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63]
+          },
+          "settings": {
+    "x_log": false,
+    "y_log": false,
+    "labels_size": 10,
+    "labels_positions": "auto",
+    "point_size": 64,
+    "point_opacity": 1,
+    "opacities": null,
+    "hover_size": 1,
+    "hover_opacity": null,
+                  "xlab": "PC1 (41.06%)",
+              "ylab": "PC2 (12.34%)",
+              "has_labels": true,
+    "col_lab": "",
+    "col_continuous": false,
+    "col_levels": null,
+    "colors": null,
+    "ellipses": false,
+    "ellipses_data": [],
+    "symbol_lab": "",
+    "symbol_levels": null,
+    "symbols": null,
+    "size_range": [10, 300],
+    "size_lab": "NULL",
+    "sizes": null,
+    "opacity_lab": "NULL",
+    "opacities.1": null,
+    "unit_circle": false,
+    "has_color_var": false,
+    "has_symbol_var": false,
+    "has_size_var": false,
+    "has_opacity_var": false,
+    "has_url_var": false,
+    "has_legend": true,
+    "has_tooltips": true,
+    "tooltip_text": null,
+    "tooltip_position_x": "right",
+    "tooltip_position_y": "bottom",
+    "has_custom_tooltips": false,
+    "click_callback": null,
+    "zoom_callback": null,
+    "zoom_on": null,
+    "zoom_on_level": 3,
+    "disable_wheel": false,
+    "fixed": false,
+    "legend_width": 150,
+    "left_margin": 100,
+    "html_id": "scatterD3-RALOWFSR",
+    "xlim": null,
+    "ylim": null,
+    "x_categorical": false,
+    "y_categorical": false,
+    "menu": true,
+    "lasso": true,
+    "lasso_callback": "function(sel) {alert(sel.data().map(function(d) {return d.lab}).join('n'));}",
+    "dom_id_reset_zoom": "scatterD3-reset-zoom",
+    "dom_id_svg_export": "scatterD3-svg-export",
+    "dom_id_lasso_toggle": "scatterD3-lasso-toggle",
+    "transitions": false,
+    "axes_font_size": "120%",
+    "legend_font_size": "100%",
+    "caption": {
+      "title": "",
+      "subtitle": "",
+      "text": ""
+    },
+    "lines": {
+      "slope": [
+        0,
+        null
+      ],
+      "intercept": [
+        0,
+        0
+      ],
+      "stroke": [
+        "#000",
+        "#000"
+      ],
+      "stroke_width": [
+        1,
+        1
+      ],
+      "stroke_dasharray": [
+        5,
+        5
+      ]
+    }
+  }
+};
+	
+
+
+		instance.renderValue(inputData);
+		
+	});
+
+
+$(document).ready(function() {
+	
+	function show_popup(){
+		//100: margin-bottom from the scatterD3-dims.js
+		var height = $("#htmlwidget-1").height() - 100;
+		
+		//250: margin-left from above
+		var width = $("#htmlwidget-1").width() - 250;
+		
+		$(".y-axis-label").attr("dy", "-50px");
+		$(".y-axis-label").attr("dx", "-" + height/2 + "px");
+		$(".y-axis-label").css("text-anchor", "middle");
+		$(".y-axis-label").css("font-size", "150%");
+		
+		$(".x-axis-label").attr("dy", "50px");
+		$(".x-axis-label").attr("dx", "-" + width/2 + "px");
+		$(".x-axis-label").css("text-anchor", "middle");
+		$(".x-axis-label").css("font-size", "150%");
+   	};
+   window.setTimeout( show_popup, 100 );
+   //1000 = 1 second
+   
+   
+	
+});
+	
+	
+		
+
+
+   
+
+</script>
+</body>
+</html>

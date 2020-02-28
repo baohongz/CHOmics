@@ -1,0 +1,5 @@
+ignore,Platform,Species,Name,Description,Disease,Ignore1,ignore2
+test1,NGS_Human,Human,Test_Import_Project1,Description1,Disease1,,
+test2,NGS_Mouse,Mouse,Test_Import_Project2,Description2,Disease2,,
+test3,GPL570,Human,Test_Import_Project3,Description3,Disease3,,
+test4,GPL13112,Mouse,Test_Import_Project4,Description4,Disease4,,
